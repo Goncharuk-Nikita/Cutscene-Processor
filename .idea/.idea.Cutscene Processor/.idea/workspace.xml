@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8c9c235-4170-4d80-8bc5-4d4f4af41dda" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cutscene Processor/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cutscene Processor/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cutscene Processor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cutscene Processor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cutscene/CutsceneAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cutscene/CutsceneAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cutscene/CutsceneCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cutscene/CutsceneCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/Cutscene/CutsceneCreatorEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/Cutscene/CutsceneCreatorEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/XmlConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/XmlConverter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_CompleteGame/Animations/Anims/Coins/Jump.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_CompleteGame/Animations/Anims/Coins/Jump.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_CompleteGame/Cutscenes/CutsceneXml.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_CompleteGame/Cutscenes/CutsceneXml.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/CutsceneManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/CutsceneManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_CompleteGame/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_CompleteGame/Scenes/MainScene.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,13 +68,14 @@
       <file leaf-file-name="Coin.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Collectables/Coin.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
+            <state relative-caret-position="627">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
-                <marker date="1536075317811" expanded="false" signature="6:78" ph="..." />
-                <marker date="1536075317811" expanded="true" signature="150:461" ph="{...}" />
-                <marker date="1536075317811" expanded="true" signature="227:363" ph="{...}" />
-                <marker date="1536075317811" expanded="true" signature="295:360" ph="{...}" />
-                <marker date="1536075317811" expanded="true" signature="420:459" ph="{...}" />
+                <marker date="1536085022982" expanded="false" signature="6:78" ph="..." />
+                <marker date="1536085022982" expanded="true" signature="189:507" ph="{...}" />
+                <marker date="1536085022982" expanded="true" signature="264:399" ph="{...}" />
+                <marker date="1536085022982" expanded="true" signature="328:396" ph="{...}" />
+                <marker date="1536085022982" expanded="true" signature="438:505" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -168,12 +162,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/FollowCamera2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/DialogController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/Collectable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/Coin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cutscene/CutsceneEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cutscene/CutsceneCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/Cutscene/CutsceneCreatorEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/XmlConverter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cutscene/CutsceneAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/Coin.cs" />
       </list>
     </option>
   </component>
@@ -186,7 +180,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
     <option name="y" value="130" />
     <option name="width" value="1440" />
@@ -280,12 +274,12 @@
       <workItem from="1535981149634" duration="23000" />
       <workItem from="1535982189636" duration="929000" />
       <workItem from="1535994107798" duration="8697000" />
-      <workItem from="1536067923982" duration="9037000" />
+      <workItem from="1536067923982" duration="9803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39510000" />
+    <option name="totallyTimeSpent" value="40276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -297,7 +291,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -633,13 +627,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Collectables/Coin.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
+        <state relative-caret-position="627">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <marker date="1536075317811" expanded="false" signature="6:78" ph="..." />
-            <marker date="1536075317811" expanded="true" signature="150:461" ph="{...}" />
-            <marker date="1536075317811" expanded="true" signature="227:363" ph="{...}" />
-            <marker date="1536075317811" expanded="true" signature="295:360" ph="{...}" />
-            <marker date="1536075317811" expanded="true" signature="420:459" ph="{...}" />
+            <marker date="1536085022982" expanded="false" signature="6:78" ph="..." />
+            <marker date="1536085022982" expanded="true" signature="189:507" ph="{...}" />
+            <marker date="1536085022982" expanded="true" signature="264:399" ph="{...}" />
+            <marker date="1536085022982" expanded="true" signature="328:396" ph="{...}" />
+            <marker date="1536085022982" expanded="true" signature="438:505" ph="{...}" />
           </folding>
         </state>
       </provider>
