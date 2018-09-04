@@ -2,25 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Animator)), RequireComponent(typeof(Rigidbody2D))]
 public class Coin : MonoBehaviour
 {
-
-	private Animator _animator;
+	private Rigidbody2D _body;
 
 #if UNITY_EDITOR
 	private void OnValidate()
 	{
-		_animator = GetComponent<Animator>();
-		if (_animator == null)
+		_body = GetComponent<Rigidbody2D>();	
+		if (_body == null)
 		{
-			Debug.LogError("Animator component not found", this);
+			Debug.LogError("Rigidbody2D component not found", this);
 		}
 	}
 #endif
 
-	public void PlayAnimation(string animationName)
+	public void Jump(float force)
 	{
-		_animator.Play(animationName);
+		_body.AddForce(Vector2.up * force, ForceMode2D.Impulse);		
 	}
 }

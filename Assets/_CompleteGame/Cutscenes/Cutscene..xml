@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ArrayOfCutsceneAction xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CutsceneAction>
+    <actionName>CameraFocus</actionName>
+    <duration>1</duration>
+    <start />
+    <end />
+  </CutsceneAction>
+  <CutsceneAction>
+    <actionName>ShowDialog</actionName>
+    <duration>0.5</duration>
+    <start />
+    <end />
+  </CutsceneAction>
+  <CutsceneAction>
+    <actionName>Coin Text</actionName>
+    <duration>3</duration>
+    <start />
+    <end />
+  </CutsceneAction>
+  <CutsceneAction>
+    <actionName>ChangeFocus</actionName>
+    <duration>1</duration>
+    <start />
+    <end />
+  </CutsceneAction>
+  <CutsceneAction>
+    <actionName>Player Text And End</actionName>
+    <duration>3</duration>
+    <start />
+    <end />
+  </CutsceneAction>
+</ArrayOfCutsceneAction>

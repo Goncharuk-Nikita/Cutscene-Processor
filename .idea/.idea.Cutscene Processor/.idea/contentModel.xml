@@ -10,7 +10,7 @@
       <e p="Assets" t="Include">
         <e p="_CompleteGame" t="Include">
           <e p="Cutscenes" t="Include">
-            <e p="CutsceneXml.xml" t="Include" />
+            <e p="Cutscene..xml" t="Include" />
           </e>
         </e>
         <e p="Plugins" t="Include">

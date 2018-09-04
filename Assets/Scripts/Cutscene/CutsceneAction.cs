@@ -10,6 +10,6 @@ public class CutsceneAction
     [Space]
     public float duration;
     
-    public UnityEvent start;
-    public UnityEvent end;
+    public CutsceneEvent start;
+    public CutsceneEvent end;
 }

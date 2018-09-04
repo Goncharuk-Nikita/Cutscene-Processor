@@ -1,9 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
+[Serializable]
 public class CutsceneCreator : MonoBehaviour
 {
+	[XmlArray("CutsceneActions")]
+	[XmlArrayItem("CutsceneAction")]
 	public List<CutsceneAction> cutsceneActions = new List<CutsceneAction>();
 
 	
@@ -23,7 +28,7 @@ public class CutsceneCreator : MonoBehaviour
 			action.end?.Invoke();
 		}
 	}
-	
+
 	
 	public void AddNewAction()
 	{

@@ -17,14 +17,15 @@ public class CutsceneCreatorEditor : Editor
 	public override void OnInspectorGUI()
 	{
 		base.OnInspectorGUI();
-
+		
 		/*EditorGUILayout.PropertyField(serializedObject.FindProperty("cutsceneActions"), true);*/
 		//serializedObject.ApplyModifiedProperties();
 		// DrawActions();
 		DrawButtons();
 	}
 
-
+	// TODO  Create custom drawer
+	/*
 	private void DrawActions()
 	{
 		for (int i = 0; i < _cutsceneCreator.cutsceneActions.Count; i++)
@@ -49,6 +50,7 @@ public class CutsceneCreatorEditor : Editor
 			
 		EditorGUILayout.EndVertical();
 	}
+	*/
 
 	private void DrawButtons()
 	{
@@ -59,6 +61,18 @@ public class CutsceneCreatorEditor : Editor
 		if (GUILayout.Button("Add Action", GUILayout.Height(32)))
 		{
 			_cutsceneCreator.AddNewAction();
+		}
+		
+		// Save to xml button
+		if (GUILayout.Button("Save to XML", GUILayout.Height(32)))
+		{
+			var path = EditorUtility.SaveFilePanel("Save Cutscene to XML", "", "Cutscene", ".xml");
+
+			if (string.IsNullOrEmpty(path))
+			{
+				return;
+			}
+			XmlConverter.SerializeAndSave(path, _cutsceneCreator.cutsceneActions);
 		}
 		
 		EditorGUILayout.EndHorizontal();
