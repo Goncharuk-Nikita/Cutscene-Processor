@@ -11,4 +11,14 @@ public static class XmlConverter
 			serializer.Serialize(stream, serializeObject);
 		}
 	}
+
+	public static T Deserialize<T>(string path)
+		where T: class
+	{
+		var serializer = new XmlSerializer(typeof(T));
+		using (var stream = new FileStream(path, FileMode.Open))
+		{
+			return serializer.Deserialize(stream) as T;
+		}
+	}
 }

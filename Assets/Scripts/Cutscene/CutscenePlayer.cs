@@ -5,8 +5,10 @@ using System.Xml.Serialization;
 using UnityEngine;
 
 [Serializable]
-public class CutsceneCreator : MonoBehaviour
+public class CutscenePlayer : MonoBehaviour
 {
+	[SerializeField] private string CutsceneName;
+	
 	[XmlArray("CutsceneActions")]
 	[XmlArrayItem("CutsceneAction")]
 	public List<CutsceneAction> cutsceneActions = new List<CutsceneAction>();

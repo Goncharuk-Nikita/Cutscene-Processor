@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(CutsceneCreator))]
+[CustomEditor(typeof(CutscenePlayer))]
 public class CutsceneCreatorEditor : Editor
 {
-	private CutsceneCreator _cutsceneCreator;
+	private CutscenePlayer _cutscenePlayer;
 	
 	private void OnEnable()
 	{
-		_cutsceneCreator = (CutsceneCreator) target;
+		_cutscenePlayer = (CutscenePlayer) target;
 	}
 	
 	
@@ -60,7 +60,7 @@ public class CutsceneCreatorEditor : Editor
 		// Add button
 		if (GUILayout.Button("Add Action", GUILayout.Height(32)))
 		{
-			_cutsceneCreator.AddNewAction();
+			_cutscenePlayer.AddNewAction();
 		}
 		
 		// Save to xml button
@@ -72,7 +72,7 @@ public class CutsceneCreatorEditor : Editor
 			{
 				return;
 			}
-			XmlConverter.SerializeAndSave(path, _cutsceneCreator.cutsceneActions);
+			XmlConverter.SerializeAndSave(path, _cutscenePlayer.cutsceneActions);
 		}
 		
 		EditorGUILayout.EndHorizontal();
