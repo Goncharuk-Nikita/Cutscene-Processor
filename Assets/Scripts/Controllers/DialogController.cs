@@ -34,6 +34,7 @@ public class DialogController : MonoBehaviour
 	}
 
 
+	
 	public void WriteText(WriteTextParams parameters)
 	{
 		ChangeTextParams(parameters.textSettings);
@@ -56,12 +57,12 @@ public class DialogController : MonoBehaviour
 			.OnComplete(ResetTextParams);
 	}
 	
-	private void ResetTextParams()
+	public void ResetTextParams()
 	{
 		ChangeTextParams(baseTextSettings);
 	}
 	
-	private void ChangeTextParams(TextSettings settings)
+	public void ChangeTextParams(TextSettings settings)
 	{
 		dialogTextBox.fontSize = settings.fontSize;
 		dialogTextBox.color = settings.fontColor;

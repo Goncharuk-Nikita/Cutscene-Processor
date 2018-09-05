@@ -6,13 +6,13 @@
   </cameraFocusObjectPath>
   <dialogMessages>
     <DialogMessage>
-      <message>You're in deep trouble! Ahaha...</message>
+      <message>You're in deep trouble! Ahaha...</message>
       <animationSeconds>2</animationSeconds>
       <duration>3</duration>
     </DialogMessage>
     <DialogMessage>
       <message>Will you take me to work?</message>
-      <animationSeconds>3</animationSeconds>
+      <animationSeconds>2</animationSeconds>
       <duration>4</duration>
     </DialogMessage>
   </dialogMessages>

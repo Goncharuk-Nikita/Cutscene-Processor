@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Xml;
 using UnityEngine;
 
 public class CutsceneXmlPlayer : MonoBehaviour
@@ -26,6 +25,7 @@ public class CutsceneXmlPlayer : MonoBehaviour
 
 	private readonly WaitForSeconds _cameraFocusDuration = new WaitForSeconds(1f);
 	
+	
 	private void Start()
 	{
 		if (cutsceneXml == null)
@@ -33,8 +33,20 @@ public class CutsceneXmlPlayer : MonoBehaviour
 			return;
 		}
 		SetCutscene(cutsceneXml);
+
+		SetUpTextSettings();
 	}
 
+	private void SetUpTextSettings()
+	{
+		var textSettings = new TextSettings
+		{
+			alignment = TextAnchor.MiddleCenter,
+			fontColor = Color.red,
+			fontSize = 40,
+		};
+		dialogController.ChangeTextParams(textSettings);
+	}
 
 
 	public void SetCutscene(TextAsset xmlAsset)
@@ -43,8 +55,6 @@ public class CutsceneXmlPlayer : MonoBehaviour
 			.DeserializeFromXml<Cutscene>();
 	}
 	
-	
-	
 	public void Play()
 	{
 		if (_cutscene == null)
@@ -52,10 +62,11 @@ public class CutsceneXmlPlayer : MonoBehaviour
 			Debug.LogError("You need to set cutscene first");
 		}
 
-		_previousCameraFocus = this.transform;
+		_previousCameraFocus = followCamera2D.target;
 		StartCoroutine(PlayCutscene());
 	}
 
+	
 	private IEnumerator PlayCutscene()
 	{
 		var cameraFocusObject = GameObject.Find(_cutscene.cameraFocusObjectPath.fullPath);
@@ -68,6 +79,7 @@ public class CutsceneXmlPlayer : MonoBehaviour
 		foreach (var dialogMessage in _cutscene.dialogMessages)
 		{
 			yield return WriteMessage(dialogMessage);
+			dialogController.ClearText();
 		}
 		
 		dialogController.HideDialog();
@@ -87,7 +99,9 @@ public class CutsceneXmlPlayer : MonoBehaviour
 
 	private IEnumerator WriteMessage(DialogMessage dialogMessage)
 	{
-		dialogController.WriteText(dialogMessage.message, dialogMessage.animationSeconds);
+		dialogController.WriteText(
+			dialogMessage.message, 
+			dialogMessage.animationSeconds);
 		
 		yield return new WaitForSeconds(dialogMessage.duration);
 	}

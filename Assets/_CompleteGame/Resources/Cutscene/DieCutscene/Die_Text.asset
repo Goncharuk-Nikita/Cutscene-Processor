@@ -14,6 +14,6 @@ MonoBehaviour:
   text: You Die!
   duration: 0.3
   textSettings:
-    fontSize: 42
+    fontSize: 60
     fontColor: {r: 1, g: 0.19862826, b: 0, a: 1}
     alignment: 4
