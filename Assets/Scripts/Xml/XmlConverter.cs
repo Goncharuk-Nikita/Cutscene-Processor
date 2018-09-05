@@ -21,4 +21,16 @@ public static class XmlConverter
 			return serializer.Deserialize(stream) as T;
 		}
 	}
+	
+	
+	public static T DeserializeFromXml<T>(this string text)
+		where T: class
+	{
+		var serializer = new XmlSerializer(typeof(T));
+
+		using (TextReader reader = new StringReader(text))
+		{
+			return serializer.Deserialize(reader) as T;
+		}
+	}
 }

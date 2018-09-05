@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 [CustomEditor(typeof(CutscenePlayer))]
-public class CutsceneCreatorEditor : Editor
+public class CutscenePlayerEditor : Editor
 {
 	private CutscenePlayer _cutscenePlayer;
 	

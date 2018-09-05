@@ -44,9 +44,16 @@ public class FollowCamera2D : MonoBehaviour
 
 	public void ChangeScaleSize(ScaleSizeParams parameters)
 	{		
-		_camera.DOOrthoSize(
+		ChangeScaleSize(
 			parameters.orthoSize, 
 			parameters.duration);
+	}
+	
+	public void ChangeScaleSize(float orthoSize, float duration)
+	{		
+		_camera.DOOrthoSize(
+			orthoSize, 
+			duration);
 	}
 }
 

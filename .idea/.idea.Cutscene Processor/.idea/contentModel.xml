@@ -10,7 +10,7 @@
       <e p="Assets" t="Include">
         <e p="_CompleteGame" t="Include">
           <e p="Cutscenes" t="Include">
-            <e p="Cutscene..xml" t="Include" />
+            <e p="EnemyCutscene..xml" t="Include" />
           </e>
         </e>
         <e p="Plugins" t="Include">
@@ -66,21 +66,31 @@
             <e p="DialogController.cs" t="Include" />
           </e>
           <e p="Cutscene" t="Include">
+            <e p="Cutscene.cs" t="Include" />
             <e p="CutsceneAction.cs" t="Include" />
+            <e p="CutsceneCreator.cs" t="Include" />
             <e p="CutsceneEvent.cs" t="Include" />
             <e p="CutscenePlayer.cs" t="Include" />
+            <e p="CutsceneXmlPlayer.cs" t="Include" />
+            <e p="DialogMessage.cs" t="Include" />
             <e p="Param.cs" t="Include" />
           </e>
           <e p="Editor" t="Include">
             <e p="Cutscene" t="Include">
-              <e p="CutsceneCreatorEditor.cs" t="Include" />
+              <e p="CutsceneCreatorEdtor.cs" t="Include" />
+              <e p="CutscenePlayerEditor.cs" t="Include" />
             </e>
+          </e>
+          <e p="Helpers" t="Include">
+            <e p="TransformPath.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="BodyPart.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
           </e>
-          <e p="XmlConverter.cs" t="Include" />
+          <e p="Xml" t="Include">
+            <e p="XmlConverter.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Resources" t="Include">

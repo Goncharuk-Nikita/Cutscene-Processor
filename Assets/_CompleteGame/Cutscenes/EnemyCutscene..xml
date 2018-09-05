@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Cutscene xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cameraFocusObjectPath>
+    <id>16774</id>
+    <fullPath>Enemies/Enemy</fullPath>
+  </cameraFocusObjectPath>
+  <dialogMessages>
+    <DialogMessage>
+      <message>You're in deep trouble! Ahaha...</message>
+      <animationSeconds>2</animationSeconds>
+      <duration>3</duration>
+    </DialogMessage>
+    <DialogMessage>
+      <message>Will you take me to work?</message>
+      <animationSeconds>3</animationSeconds>
+      <duration>4</duration>
+    </DialogMessage>
+  </dialogMessages>
+</Cutscene>

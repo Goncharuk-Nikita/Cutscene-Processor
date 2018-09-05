@@ -38,9 +38,14 @@ public class DialogController : MonoBehaviour
 	{
 		ChangeTextParams(parameters.textSettings);
 		
+		WriteText(parameters.text, parameters.duration);
+	}
+
+	public void WriteText(string text, float duration)
+	{
 		dialogTextBox.DOText(
-			parameters.text,
-			parameters.duration);
+			text,
+			duration);
 	}
 
 	public void ClearText()
