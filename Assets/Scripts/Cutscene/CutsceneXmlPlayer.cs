@@ -7,7 +7,7 @@ public class CutsceneXmlPlayer : MonoBehaviour
 	[SerializeField] private TextAsset cutsceneXml;
 
 	[Space]
-	[Header("Player Components")]
+	[Header("Playable Components")]
 	[SerializeField] private FollowCamera2D followCamera2D;
 	[SerializeField] private DialogController dialogController;
 
