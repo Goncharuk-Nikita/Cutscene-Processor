@@ -13,3 +13,5 @@ Cutscene содержит:
 Для создания Cutscene вам необходимо прикрепить CutsceneCreator скрипт к любому GameObject. Затем, после 
 создания cutscene сериализовать его в XML, нажав кнопку "Save to XML". 
 Для проигрывания данной Cutscene вам необходимо прикрепить CutsceneXmlPlayer и передать в него TextAsset сериализованной Cutscene.
+
+![Alt Text](https://github.com/Goncharuk-Nikita/Cutscene-Processor/blob/master/2018-12-31_17-13-30.gif)
